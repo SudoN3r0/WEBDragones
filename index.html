@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignis · Mi dragón</title>
+  <meta name="description" content="Conoce a Ignis, mi dragón rojo de compañía, a su familia de dragones y todo lo que necesitas para cuidar de uno.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐉</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">Ignis<span>·</span>Dragón</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#sobre">Sobre Ignis</a></li>
+          <li><a href="#familia">Familia</a></li>
+          <li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Portada -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Bestiario personal · Tomo I</p>
+          <h1>Ignis, el dragón que vive en mi casa</h1>
+          <p class="lead">Tiene doscientos años, escupe fuego cuando estornuda y adora dormir encima de la calefacción. Esta es su historia, la de su familia y la guía para que tú también sobrevivas a convivir con un dragón.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sobre">Conocer a Ignis</a>
+            <a class="btn btn-ghost" href="#cuidados">Guía de cuidados</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="img/dragon-rojo.jpg" alt="Ignis, un dragón rojo de alas enormes, mirando con curiosidad a un pequeño aventurero" width="400" height="400">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Sobre Ignis -->
+    <section id="sobre" class="section">
+      <div class="container two-col reveal">
+        <div>
+          <p class="eyebrow">Capítulo I</p>
+          <h2>Sobre Ignis</h2>
+          <p>Ignis llegó a casa dentro de un huevo del tamaño de un melón que encontré en un mercadillo. El vendedor juraba que era «una piedra decorativa». Tres días después, la piedra se rompió y salió una criatura roja que se comió mis zapatillas.</p>
+          <p>Hoy mide lo mismo que un autobús (con la cola enrollada), es tremendamente leal y protege la casa mejor que cualquier alarma. Eso sí: el seguro del hogar ya no nos cubre.</p>
+        </div>
+        <aside class="card ficha" aria-labelledby="ficha-titulo">
+          <h3 id="ficha-titulo">Ficha del dragón</h3>
+          <dl>
+            <div><dt>Nombre</dt><dd>Ignis</dd></div>
+            <div><dt>Especie</dt><dd>Dragón rojo de montaña</dd></div>
+            <div><dt>Edad</dt><dd>212 años (joven)</dd></div>
+            <div><dt>Envergadura</dt><dd>14 metros</dd></div>
+            <div><dt>Comida favorita</dt><dd>Pimientos asados… muy asados</dd></div>
+            <div><dt>Afición</dt><dd>Coleccionar monedas brillantes</dd></div>
+            <div><dt>Temperamento</dt><dd>Cariñoso, algo dramático</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Familia / galería -->
+    <section id="familia" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Capítulo II</p>
+          <h2>La familia de Ignis</h2>
+          <p>Ningún dragón vuela solo. Pulsa sobre cada retrato para verlo en grande.</p>
+        </div>
+        <div class="gallery">
+          <article class="dragon-card reveal">
+            <button class="gallery-btn" data-full="img/dragon-rojo.jpg" data-caption="Ignis — el protagonista de esta web">
+              <img src="img/dragon-rojo.jpg" alt="Ignis, dragón rojo" width="400" height="400" loading="lazy">
+            </button>
+            <div class="dragon-info">
+              <h3>Ignis</h3>
+              <p class="tag tag-fuego">Fuego</p>
+              <p>El de casa. Duerme 16 horas al día y ronca en forma de humo.</p>
+            </div>
+          </article>
+          <article class="dragon-card reveal">
+            <button class="gallery-btn" data-full="img/dragon-hielo.jpg" data-caption="Escarcha — la prima del norte">
+              <img src="img/dragon-hielo.jpg" alt="Escarcha, dragona azul de hielo volando" width="400" height="400" loading="lazy">
+            </button>
+            <div class="dragon-info">
+              <h3>Escarcha</h3>
+              <p class="tag tag-hielo">Hielo</p>
+              <p>Su prima del norte. Nos visita en verano y hace de aire acondicionado.</p>
+            </div>
+          </article>
+          <article class="dragon-card reveal">
+            <button class="gallery-btn" data-full="img/dragon-cumbre.jpg" data-caption="Brasa — la madre de Ignis">
+              <img src="img/dragon-cumbre.jpg" alt="Brasa, dragona roja posada sobre una cumbre entre nubes" width="400" height="400" loading="lazy">
+            </button>
+            <div class="dragon-info">
+              <h3>Brasa</h3>
+              <p class="tag tag-fuego">Fuego</p>
+              <p>La madre de Ignis. Vive en lo alto de un pico y nunca baja a visitarnos.</p>
+            </div>
+          </article>
+          <article class="dragon-card reveal">
+            <button class="gallery-btn" data-full="img/dragon-boceto.jpg" data-caption="Grimor el Antiguo — el abuelo, retratado hace siglos">
+              <img src="img/dragon-boceto.jpg" alt="Grimor, dragón anciano dibujado en un boceto sepia" width="400" height="400" loading="lazy">
+            </button>
+            <div class="dragon-info">
+              <h3>Grimor el Antiguo</h3>
+              <p class="tag tag-tierra">Tierra</p>
+              <p>El abuelo. Solo existe este retrato, pintado por un monje muy valiente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuidados -->
+    <section id="cuidados" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Capítulo III</p>
+          <h2>Cómo cuidar de un dragón</h2>
+          <p>Lo que me habría gustado saber antes de adoptar a Ignis.</p>
+        </div>
+        <div class="cards">
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">🍖</span>
+            <h3>Alimentación</h3>
+            <p>Tres comidas al día, ricas en proteínas. Nunca le des agua fría después de comer: provoca estornudos ígneos.</p>
+          </article>
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">🔥</span>
+            <h3>Temperatura</h3>
+            <p>Necesita dormir a más de 40 °C. Una piedra volcánica cerca de su cama le hace muy feliz.</p>
+          </article>
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">🪽</span>
+            <h3>Ejercicio</h3>
+            <p>Un vuelo largo al día como mínimo. Evita sobrevolar aeropuertos y procesiones.</p>
+          </article>
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">💰</span>
+            <h3>Tesoro</h3>
+            <p>Todo dragón necesita su tesoro. Unas monedas de chocolate envueltas en papel dorado sirven.</p>
+          </article>
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">🛁</span>
+            <h3>Higiene</h3>
+            <p>Escamas cepilladas cada semana con un cepillo de acero. Baños de arena, nunca de espuma.</p>
+          </article>
+          <article class="card care reveal">
+            <span class="care-icon" aria-hidden="true">❤️</span>
+            <h3>Cariño</h3>
+            <p>Parecen fieros, pero adoran que les rasquen detrás de los cuernos. Con guantes ignífugos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="section section-dark">
+      <div class="container curiosity reveal">
+        <p class="eyebrow">Capítulo IV</p>
+        <h2>¿Sabías que…?</h2>
+        <p id="dato" class="dato" aria-live="polite">Los dragones pueden vivir más de mil años y no dejan de crecer en toda su vida.</p>
+        <button id="nuevo-dato" class="btn btn-primary">Otro dato curioso 🔥</button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container two-col reveal">
+        <div>
+          <p class="eyebrow">Capítulo V</p>
+          <h2>Escríbele a Ignis</h2>
+          <p>Ignis no sabe leer, pero le encanta que le lleguen cartas (se las come). Déjale un mensaje y se lo leeré en voz alta.</p>
+        </div>
+        <form id="form-contacto" class="card form" novalidate>
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name">
+          <label for="mensaje">Mensaje para Ignis</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <button class="btn btn-primary" type="submit">Enviar con un cuervo</button>
+          <p id="form-estado" class="form-estado" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Hecho con 🔥 por el cuidador de Ignis · Proyecto del curso de diseño web asistido por IA · 2026</p>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes -->
+  <dialog id="lightbox" class="lightbox" aria-label="Imagen ampliada">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
